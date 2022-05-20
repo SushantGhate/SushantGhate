@@ -6,10 +6,17 @@ namespace CS_SimpleClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             operations op = new operations();
-            int result = op.calPower(2, 2);
-            Console.WriteLine($"Raise to values are: {result}");
+            double rPower = op.calPower();
+            Console.WriteLine($"Power of given number {rPower}");
+            
+            int rFactorial = op.calFactorial(0);
+            Console.WriteLine($"Factorial of given number is {rFactorial}");
+
+            double rTrignometry = op.trignomerty("cod", 120);
+            Console.WriteLine($"Trignometry value for entered values is: {rTrignometry}");
+
+
         }
         
     }

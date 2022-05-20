@@ -8,13 +8,40 @@ namespace CS_SimpleClass
 {
     class operations
     {
-        public int calPower(int a, int b)
+        public double calPower()
         {
-            if (b == 0)
-
-                return 1;
+            double Power = Math.Pow(10, 2);
+            return Power;
+        }
+        public int calFactorial(int a)
+        {
+            int fact = 1;
+            for (int i = 1; i <= a; i++)
+            {
+                fact = fact*i ;
+            }
+            return fact;
+        }
+        public double trignomerty(string trignoType,double tValue)
+        {
+            if(trignoType == "sin")
+            {
+                return Math.Sin(tValue);
+            }
+            else if (trignoType =="Cos")
+            {
+                return Math.Cos(tValue);
+            }
+            else if (trignoType == "tan")
+            {
+                return Math.Tan(tValue);
+            }
             else
-                return a * calPower(a, b - 1);
+            { 
+                return 0;
+            }
+
+            
         }
     }
 }
